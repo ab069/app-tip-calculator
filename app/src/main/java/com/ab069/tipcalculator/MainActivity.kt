@@ -1,10 +1,11 @@
-package com.yourapp.template
+package com.ab069.tipcalculator
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.yourapp.template.ui.theme.AppTheme
+import com.ab069.tipcalculator.ui.screens.TipScreen
+import com.ab069.tipcalculator.ui.theme.AppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,7 +13,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             AppTheme {
-                AppNavigation()
+                TipScreen()
             }
         }
     }

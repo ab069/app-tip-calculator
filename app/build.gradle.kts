@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.yourapp.template"
+    namespace = "com.ab069.tipcalculator"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.yourapp.template"
+        applicationId = "com.ab069.tipcalculator"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
@@ -46,6 +46,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui)
